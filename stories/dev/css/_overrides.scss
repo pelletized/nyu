@@ -1,0 +1,48 @@
+/* overrides */
+.nyu-stories {
+	* {
+		box-sizing:border-box;
+	}
+	
+	p {
+		font-family:$font-stack-ssm;
+	}
+	
+	.link-text {
+		color:#000;
+	}
+	
+	.pink {	
+		color:$color-nyu-pink;
+	}
+	
+	.contentWrapper {
+		width: 960px;
+		clear: both;
+		margin: 0 auto;
+	}
+	
+	.contentWrapper:after {
+	display:table;
+	content:"";
+	clear:both;
+	}
+	
+	.nyu-stories-footer-content p {
+		color:#FFF;
+	}
+	
+	hr {
+		background-color: transparent;
+		clear: both;
+		display: block;
+		height: 0;
+		margin:0;
+		width:0;
+	}
+	
+	.whitePromoBox img {
+		border:none;
+	}	
+
+}

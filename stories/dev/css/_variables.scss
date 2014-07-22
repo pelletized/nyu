@@ -1,0 +1,31 @@
+// variables 
+$color-teal-light:#77c4d3;
+$color-teal-dark:#0a7aa6;
+$color-yellow:#ffb800;
+$color-grey-light:#c7c7c9; 
+$color-grey-dark:#333745;
+$color-white:#FFF;
+$color-nyu-pink:#d11255;
+
+$font-stack:'Gotham A','Gotham B',sans-serif;
+$font-stack-ssm:'Gotham SSm A','Gotham SSm B',sans-serif; //screen smart fonts for sizes 16px and below
+$font-weight-light:300;
+$font-weight-medium:700;
+
+$nav-main-background: $color-teal-light;
+$nav-main-active: $color-teal-dark;
+$nav-main-link: $color-white;
+
+$main-story-background: $color-grey-dark;
+
+$main-story-header:$color-yellow;
+$main-story-divider:$color-teal-dark;
+
+$section-header:$color-teal-light;
+$section-header-title:$color-teal-dark;
+
+$text-highlight:$color-yellow;
+
+$section-title-background:$color-yellow;
+
+$footer-background:$color-grey-light; 
