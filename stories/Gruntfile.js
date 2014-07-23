@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 			},
 			css: {
 				src: [
-					'dev/css/*.css'					
+					'dev/scss/*.css'					
 				],
 				dest: 'css/nyustories.css',
 			}			
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
 					
 				},
 				files: {										
-					'dev/css/nyustories.css': 'dev/css/nyustories.scss'
+					'dev/scss/nyustories.css': 'dev/scss/nyustories.scss'
 				}
 			} 
 		},
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
 				},
 			},
 			css: {
-				files: ['dev/css/*.scss'],
+				files: ['dev/scss/*.scss'],
 				tasks: ['sass', 'concat:css'],
 				options: {
 					spawn: false,

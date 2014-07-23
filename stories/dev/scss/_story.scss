@@ -1,0 +1,54 @@
+//styles for story template
+.nyu-stories-story {
+display:block;
+text-align:left;			
+	
+	.nyuImage .left {
+		margin-left:-100px;
+	}
+}
+
+.story {
+display:block;
+margin:0 auto 30px auto;
+padding-bottom:80px;
+border-bottom:1px solid $color-teal-dark;
+	
+	p {
+		font-size:14px;
+		line-height:1.5;
+	}
+	
+	h1 {
+		display:inline-block;
+		margin-bottom:53px;
+		width:76%;
+		font-family: $font-stack;
+		font-size:48px;
+		line-height:48px;
+		font-weight:$font-weight-light;
+		color:$section-header-title;	
+	}
+	
+	time {		
+		display:inline-block;
+		width:18%;
+		vertical-align:top;
+		margin:3px 0 0 15px;
+		font-family: $font-stack-ssm;
+		font-size:14px;
+		font-weight:$font-weight-medium;
+		color:$color-teal-light;		
+	}
+	
+
+}
+
+.story-header {
+margin-top:50px;
+margin-bottom:60px;
+}
+
+.story-content {
+padding-left:195px;
+}

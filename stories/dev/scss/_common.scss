@@ -1,0 +1,71 @@
+/* resets */
+body {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+/* common */
+.clearfix { 
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.uppercase {
+text-transform:uppercase;
+}
+
+.highlight {
+color: $text-highlight;
+}
+
+.title-center {
+display:table-cell;	
+text-align:center;
+vertical-align:middle;
+}
+
+.section-box {
+	margin:0 15px;
+	
+	p {
+		margin:5px 0;
+		padding:0;
+	}
+}
+
+.section-box-140words {
+width:355px;
+}
+
+.section-box-twitter {
+width:545px;
+	
+	p {
+	margin-bottom:24px;
+	}
+	
+	p:last-child {
+	margin-bottom:0;
+	}
+}
+
+.section-box-title {
+background-color:$section-title-background;
+border:1px solid #000;
+border-bottom:0;
+font:normal 16px/21px $font-stack-ssm;
+font-weight:$font-weight-medium;
+line-height:80px;
+height:80px;
+padding-left:35px;
+padding-right:35px;
+}
+
+.section-box-content {
+border:1px solid #000;
+background-color:#FFF;
+padding:30px;
+}

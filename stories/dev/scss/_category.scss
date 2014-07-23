@@ -1,0 +1,97 @@
+//styles for category pages
+.nyu-stories-category {
+
+	.doubleBox {
+	//border:1px solid red;	
+	}
+}
+
+.category {
+display:block;
+margin:0 auto 30px auto;
+padding-bottom:80px;
+border-bottom:1px solid $color-teal-dark;
+
+	h1 {
+	margin:0;
+	padding:0;
+	}
+
+	.section-header {
+	margin:40px 0;
+	padding:0;	
+	}
+}
+
+.cat-header {
+margin-top:50px;
+margin-bottom:60px;
+}
+
+.cat-divider-vertical {
+border-right:2px solid $color-teal-sky;
+}
+
+.featured-cat-detail {
+margin-bottom:60px;
+padding-bottom:30px;
+border-bottom:2px solid	$color-teal-sky;		
+}
+
+.cat-detail {
+	ul {
+	margin:0;
+	padding:0;
+	}
+
+	.featured-cat-detail,
+	li {
+	margin:30px 0;			
+	}
+	
+	li:first-child {
+	margin-top:0;
+	}
+	
+	li:last-child {
+	//margin-bottom:0;
+	}
+	
+	.featured-cat-detail:after,
+	li:after {
+	content:"";
+	display:block;
+	margin:0 15px 0 0;
+	padding-top:15px;
+	border-bottom:1px solid $cat-divider-horizontal;
+	}
+	
+	li:last-child:after {
+	border:0;
+	}
+}
+
+.cat-detail-image {
+display:table-cell;
+//width:160px;
+vertical-align:top;
+padding-right:15px;
+	
+	img {
+	margin:0;
+	padding:0;
+	}
+}
+
+.cat-detail-content {
+display:table-cell;
+vertical-align:top;	
+	
+	h3 {
+	font:$font-weight-medium 16px/1.5 $font-stack-ssm;
+		
+		a {
+			color:$section-header-title;
+		}	
+	}
+}
