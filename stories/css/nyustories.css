@@ -47,73 +47,6 @@
   top: -15px;
 }
 
-/* resets */
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* common */
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.highlight {
-  color: #ffb800;
-}
-
-.title-center {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.section-box {
-  margin: 0 15px;
-}
-.section-box p {
-  margin: 5px 0;
-  padding: 0;
-}
-
-.section-box-140words {
-  width: 355px;
-}
-
-.section-box-twitter {
-  width: 545px;
-}
-.section-box-twitter p {
-  margin-bottom: 24px;
-}
-.section-box-twitter p:last-child {
-  margin-bottom: 0;
-}
-
-.section-box-title {
-  background-color: #ffb800;
-  border: 1px solid #000;
-  border-bottom: 0;
-  font: normal 16px/21px "Gotham SSm A", "Gotham SSm B", sans-serif;
-  font-weight: 700;
-  line-height: 80px;
-  height: 80px;
-  padding-left: 35px;
-  padding-right: 35px;
-}
-
-.section-box-content {
-  border: 1px solid #000;
-  background-color: #FFF;
-  padding: 30px;
-}
-
 /* structure */
 .featured {
   position: relative;
@@ -240,6 +173,7 @@ a.story-link:hover .story-img:before {
   margin-bottom: -3px;
   background-image: url(../images/sprites.png);
   background-repeat: no-repeat;
+  background-position: 0 -80px;
   width: 14px;
   height: 17px;
 }
@@ -251,7 +185,7 @@ a.story-link:hover .story-img:before {
   margin-bottom: -4px;
   background-image: url(../images/sprites.png);
   background-repeat: no-repeat;
-  background-position: -60px 0;
+  background-position: -60px -80px;
   width: 22px;
   height: 17px;
 }
@@ -263,7 +197,7 @@ a.story-link:hover .story-img:before {
   margin-bottom: -3px;
   background-image: url(../images/sprites.png);
   background-repeat: no-repeat;
-  background-position: -30px 0;
+  background-position: -30px -80px;
   width: 16px;
   height: 17px;
 }
@@ -384,31 +318,69 @@ a.story-link:hover .story-img:before {
 }
 .nyu-stories-footer-content .footer-contact a:hover,
 .nyu-stories-footer-content .footer-contact p a:hover {
-  color: #cfd2db;
-}
-.nyu-stories-footer-content .footer-connect {
-  margin-top: 60px;
+  color: #878690;
 }
 .nyu-stories-footer-content .footer-connect h4 {
+  margin-top: 60px;
   display: inline-block;
+  vertical-align: bottom;
 }
 .nyu-stories-footer-content .footer-connect ul, .nyu-stories-footer-content .footer-connect li {
   display: inline-block;
 }
+.nyu-stories-footer-content .footer-connect li {
+  background: transparent url("../images/sprites.png") no-repeat 0 0;
+  text-indent: -9999px;
+  outline: none;
+}
+.nyu-stories-footer-content .footer-connect li a {
+  display: block;
+}
+.nyu-stories-footer-content .footer-connect li.fs-fb {
+  width: 31px;
+  height: 32px;
+  margin-right: 23px;
+}
+.nyu-stories-footer-content .footer-connect li.fs-fb:hover {
+  background-position: 0 -31px;
+}
+.nyu-stories-footer-content .footer-connect li.fs-tw {
+  background-position: -58px 0;
+  width: 31px;
+  height: 32px;
+  margin-right: 13px;
+}
+.nyu-stories-footer-content .footer-connect li.fs-tw:hover {
+  background-position: -58px -31px;
+}
+.nyu-stories-footer-content .footer-connect li.fs-yt {
+  background-position: -103px 0;
+  width: 77px;
+  height: 32px;
+}
+.nyu-stories-footer-content .footer-connect li.fs-yt:hover {
+  background-position: -103px -31px;
+  height: 32px;
+}
 
-.category {
+.nyustories-category {
   display: block;
   margin: 0 auto 30px auto;
   padding-bottom: 80px;
   border-bottom: 1px solid #0a7aa6;
 }
-.category h1 {
-  margin: 0;
-  padding: 0;
-}
-.category .section-header {
+.nyustories-category .section-header {
   margin: 40px 0;
   padding: 0;
+}
+.nyustories-category h1 {
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+}
+.nyustories-category p {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .cat-header {
@@ -452,7 +424,7 @@ a.story-link:hover .story-img:before {
 .cat-detail-image {
   display: table-cell;
   vertical-align: top;
-  padding-right: 15px;
+  padding-right: 30px;
 }
 .cat-detail-image img {
   margin: 0;
@@ -463,10 +435,15 @@ a.story-link:hover .story-img:before {
   display: table-cell;
   vertical-align: top;
 }
-.cat-detail-content h3 {
+.cat-detail-content p {
+  margin-left: 0;
+}
+.cat-detail-content h2, .cat-detail-content h3 {
+  margin-top: -5px;
+  margin-left: 0;
   font: 700 16px/1.5 "Gotham SSm A", "Gotham SSm B", sans-serif;
 }
-.cat-detail-content h3 a {
+.cat-detail-content h2 a, .cat-detail-content h3 a {
   color: #0a7aa6;
 }
 
@@ -516,6 +493,86 @@ a.story-link:hover .story-img:before {
 
 .story-content {
   padding-left: 195px;
+}
+
+/* resets */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* common */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: #ffb800;
+}
+
+.title-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.section-box {
+  margin: 0 15px;
+}
+.section-box p {
+  margin: 5px 0;
+  padding: 0;
+}
+
+.section-box-140words {
+  width: 355px;
+}
+
+.section-box-twitter {
+  width: 545px;
+}
+.section-box-twitter p {
+  margin-bottom: 24px;
+}
+.section-box-twitter p:last-child {
+  margin-bottom: 0;
+}
+
+.section-box-title {
+  background-color: #ffb800;
+  border: 1px solid #000;
+  border-bottom: 0;
+  font: normal 16px/1.5 "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-weight: 700;
+  line-height: 80px;
+  height: 80px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.section-box-content {
+  border: 1px solid #000;
+  background-color: #FFF;
+  padding: 30px;
+}
+.section-box-content p {
+  font: normal 11px/1.5 "Gotham SSm A", "Gotham SSm B", sans-serif;
+}
+
+.whitePromoBox div.caption-article:after,
+.whitePromoBox div.caption-video:after,
+.whitePromoBox div.caption-slideshow:after,
+.cat-detail-content.caption-article:after,
+.cat-detail-content.caption-video:after,
+.cat-detail-content.caption-slideshow:after {
+  display: block;
+  margin-left: 0;
 }
 
 /* overrides */
