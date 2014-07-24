@@ -1,7 +1,6 @@
 /* nav */
 .stories-main-nav-wrap {
   position: absolute;
-  top: 245px;
   background: #77c4d3;
   width: 100%;
   height: 50px;
@@ -103,6 +102,9 @@
   color: #FFF;
   text-decoration: none;
 }
+.main-story-desc a:hover {
+  color: #ea2e49;
+}
 
 ul, li {
   margin: 0;
@@ -134,6 +136,11 @@ a.story-link {
   display: block;
   width: 100%;
   text-decoration: none;
+  color: #333745;
+}
+
+a:hover.story-link {
+  color: #87858F;
 }
 
 .story-img {
@@ -144,7 +151,7 @@ a.story-link {
   background-size: cover;
 }
 
-.story-img::before {
+.story-img:before {
   content: "";
   position: absolute;
   top: 0;
@@ -161,9 +168,9 @@ a.story-link:hover .story-img:before {
 }
 
 .story-caption {
-  padding-left: 5px;
+  display: block;
+  padding: 5px 5px 0 5px;
   font: normal 16px/21px "Gotham SSm A", "Gotham SSm B", sans-serif;
-  color: #333745;
 }
 
 .caption-article:after {
@@ -257,19 +264,6 @@ a.story-link:hover .story-img:before {
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.overlay {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  opacity: .65;
-  z-index: 10;
-}
-
-.overlay-green {
-  background-color: #77c4d3;
 }
 
 /* promos */
@@ -379,8 +373,8 @@ a.story-link:hover .story-img:before {
   margin-top: 70px;
 }
 .nyustories-category p {
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .cat-header {
@@ -439,12 +433,15 @@ a.story-link:hover .story-img:before {
   margin-left: 0;
 }
 .cat-detail-content h2, .cat-detail-content h3 {
-  margin-top: -5px;
-  margin-left: 0;
-  font: 700 16px/1.5 "Gotham SSm A", "Gotham SSm B", sans-serif;
+  margin: -4px 0 0 0;
+  font: 700 20px/24px "Gotham SSm A", "Gotham SSm B", sans-serif;
 }
 .cat-detail-content h2 a, .cat-detail-content h3 a {
   color: #0a7aa6;
+}
+.cat-detail-content h2 a:hover, .cat-detail-content h3 a:hover {
+  color: #d11255;
+  text-decoration: none;
 }
 
 .nyu-stories-story {
@@ -462,16 +459,17 @@ a.story-link:hover .story-img:before {
   border-bottom: 1px solid #0a7aa6;
 }
 .story p {
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 24px;
 }
 .story h1 {
   display: inline-block;
+  margin-top: -3px;
   margin-bottom: 53px;
   width: 76%;
   font-family: "Gotham A", "Gotham B", sans-serif;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 46px;
+  line-height: 52px;
   font-weight: 300;
   color: #0a7aa6;
 }
@@ -493,6 +491,7 @@ a.story-link:hover .story-img:before {
 
 .story-content {
   padding-left: 195px;
+  padding-left: 200px;
 }
 
 /* resets */
@@ -545,7 +544,7 @@ body {
 }
 
 .section-box-title {
-  background-color: #ffb800;
+  background-color: #f7e967;
   border: 1px solid #000;
   border-bottom: 0;
   font: normal 16px/1.5 "Gotham SSm A", "Gotham SSm B", sans-serif;

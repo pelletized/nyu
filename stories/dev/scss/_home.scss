@@ -61,6 +61,10 @@ margin-top:88px;
 		color:#FFF;
 		text-decoration:none;
 		}
+		
+		a:hover {
+		color:#ea2e49;
+		}
 	}	
 	
 	ul, li {	
@@ -93,6 +97,11 @@ margin-top:88px;
 	display:block;
 	width:100%;
 	text-decoration:none;
+	color:$color-grey-dark;
+	}
+	
+	a:hover.story-link {
+	color:#87858F;
 	}
 
 	.story-img {
@@ -103,7 +112,7 @@ margin-top:88px;
 	background-size: cover;	
 	}
 	
-	.story-img::before {	
+	.story-img:before {	
 	content:"";
 	position:absolute;
 	top:0;
@@ -120,9 +129,9 @@ margin-top:88px;
 	}
 	
 	.story-caption {
-	padding-left:5px;
-	font: normal 16px/21px $font-stack-ssm;
-	color:$color-grey-dark;	
+	display:block;	
+	padding:5px 5px 0 5px;
+	font: normal 16px/21px $font-stack-ssm;		
 	}		
 
 	.caption-article:after {	
@@ -134,7 +143,7 @@ margin-top:88px;
 	background-repeat:no-repeat;
 	background-position:0 -80px;
 	width:14px;
-	height:17px;			
+	height:17px;	
 	}
 	
 	.caption-video:after {	
@@ -222,19 +231,6 @@ right:0;
 bottom:0;
 }
 
-.overlay {
-position:absolute;
-display:block;
-width:100%;
-height:100%;
-opacity:.65;
-z-index:10;
-}
-
-.overlay-green {
-background-color:$color-teal-light;
-}
-
 /* promos */
 .doubleColPromo,
 .tripleColPromo {
@@ -298,10 +294,6 @@ height:320px;
 		display:inline-block;
 		}	
 
-		.nyu-stories-social {
-				
-		}
-		
 		li {
 		background:transparent url('../images/sprites.png') no-repeat 0 0;		
 		text-indent:-9999px;

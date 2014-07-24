@@ -15,17 +15,18 @@ padding-bottom:80px;
 border-bottom:1px solid $color-teal-dark;
 	
 	p {
-		font-size:14px;
-		line-height:1.5;
+		font-size:15px;
+		line-height:24px;
 	}
 	
 	h1 {
 		display:inline-block;
+		margin-top:-3px;
 		margin-bottom:53px;
 		width:76%;
 		font-family: $font-stack;
-		font-size:48px;
-		line-height:48px;
+		font-size:46px;
+		line-height:52px;
 		font-weight:$font-weight-light;
 		color:$section-header-title;	
 	}
@@ -51,4 +52,5 @@ margin-bottom:60px;
 
 .story-content {
 padding-left:195px;
+padding-left:200px;
 }

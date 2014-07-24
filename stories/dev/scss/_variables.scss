@@ -2,7 +2,8 @@
 $color-teal-light:#77c4d3;
 $color-teal-dark:#0a7aa6;
 $color-teal-sky:#c8e1eb;
-$color-yellow:#ffb800;
+$color-yellow-light:#f7e967;
+$color-yellow-dark:#ffb800;
 $color-grey-light:#c7c7c9; 
 $color-grey-medium:#878690; 
 $color-grey-dark:#333745;
@@ -20,15 +21,15 @@ $nav-main-link: $color-white;
 
 $main-story-background: $color-grey-dark;
 
-$main-story-header:$color-yellow;
+$main-story-header:$color-yellow-dark;
 $main-story-divider:$color-teal-dark;
 
 $section-header:$color-teal-light;
 $section-header-title:$color-teal-dark;
 
-$text-highlight:$color-yellow;
+$text-highlight:$color-yellow-dark;
 
-$section-title-background:$color-yellow;
+$section-title-background:$color-yellow-light;
 
 $footer-background:$color-grey-light; 
 

@@ -17,10 +17,9 @@ border-bottom:1px solid $color-teal-dark;
 	}
 	
 	p {
-	font-size:14px;
-	line-height:1.5;	
+	font-size:15px;
+	line-height:24px;	
 	}
-
 	
 }
 
@@ -88,13 +87,17 @@ vertical-align:top;
 	margin-left:0;
 	}
 	
-	h2, h3 {
-	margin-top:-5px;
-	margin-left:0;
-	font:$font-weight-medium 16px/1.5 $font-stack-ssm;		
+	h2, h3 {	
+	margin:-4px 0 0 0;
+	font:$font-weight-medium 20px/24px $font-stack-ssm;		
 		
 		a {
 			color:$section-header-title;
 		}	
+		
+		a:hover {
+			color:$color-nyu-pink;
+			text-decoration:none;
+		}
 	}
 }
