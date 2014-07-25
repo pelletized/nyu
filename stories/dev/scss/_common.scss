@@ -53,7 +53,7 @@ width:545px;
 }
 
 .section-box-title {
-background-color:$section-title-background;
+background-color:$section-title-background-home;
 border:1px solid #000;
 border-bottom:0;
 font:normal 16px/1.5 $font-stack-ssm;
@@ -62,6 +62,10 @@ line-height:80px;
 height:80px;
 padding-left:35px;
 padding-right:35px;
+}
+
+.nyu-stories-category .section-box-title {
+background-color:$section-title-background;
 }
 
 .section-box-content {

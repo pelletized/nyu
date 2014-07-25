@@ -4,9 +4,6 @@
   background: #77c4d3;
   width: 100%;
   height: 50px;
-  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
-  font-style: normal;
-  font-weight: 700;
   z-index: 999;
 }
 .stories-main-nav-wrap .stories-main-nav {
@@ -20,18 +17,15 @@
   float: right;
   text-align: left;
   width: 500px;
-  font-size: 0;
+  font: 700 14px/50px "Gotham SSm A", "Gotham SSm B", sans-serif;
 }
 .stories-main-nav-wrap .stories-main-nav ul li {
-  font-size: 12px;
   display: inline-block;
 }
 .stories-main-nav-wrap a {
-  font-size: 14px;
   display: block;
   color: white;
   text-transform: uppercase;
-  line-height: 50px;
   padding: 0 20px;
 }
 .stories-main-nav-wrap a:hover {
@@ -544,7 +538,7 @@ body {
 }
 
 .section-box-title {
-  background-color: #f7e967;
+  background-color: #ffb800;
   border: 1px solid #000;
   border-bottom: 0;
   font: normal 16px/1.5 "Gotham SSm A", "Gotham SSm B", sans-serif;
@@ -553,6 +547,10 @@ body {
   height: 80px;
   padding-left: 35px;
   padding-right: 35px;
+}
+
+.nyu-stories-category .section-box-title {
+  background-color: #f7e967;
 }
 
 .section-box-content {

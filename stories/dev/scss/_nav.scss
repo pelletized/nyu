@@ -1,13 +1,10 @@
 /* nav */
 .stories-main-nav-wrap {
 position:absolute;
-//top:245px;
+//top:245px; //removed and added into main.js
 background: $nav-main-background;
 width:100%;
 height:50px; 
-font-family: $font-stack-ssm;
-font-style: normal;
-font-weight: $font-weight-medium;
 z-index:999;
 
 	.stories-main-nav {
@@ -22,22 +19,19 @@ z-index:999;
 			float:right;
 			text-align:left;
 			width:500px;			
-			font-size: 0;
+			font:$font-weight-medium 14px/50px $font-stack-ssm;
 		}
 		
-		ul li {		
-			font-size:12px;
+		ul li {					
 			display:inline-block;
 		}
 		
 	}
 	
-	a {
-		font-size:14px;
+	a {		
 		display:block;		
 		color: $nav-main-link;
-		text-transform:uppercase;
-		line-height:50px;		
+		text-transform:uppercase;				
 		padding:0 20px;
 	}	
 	

@@ -5,7 +5,7 @@ if($('.stories-main-nav-wrap').length) {
 	(function() {	
 		var stickyNav = $('.stories-main-nav-wrap').offset().top;						
 		stickyNav = stickyNav - 75; //adjust for smoother transition
-		var positionTop;
+		var positionTopAbs, positionTopFixed;
 		
 		//if alerts exist on the page, move nav down below
 		if ($('#alerts').length) {
