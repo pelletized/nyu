@@ -438,6 +438,24 @@ a.story-link:hover .story-img:before {
   text-decoration: none;
 }
 
+.promo-sidebar {
+  position: relative;
+  width: 355px;
+  height: 330px;
+  margin: 36px 15px;
+  background-position: cover;
+}
+.promo-sidebar .excerpt-title {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  font: 20px/28px "Gotham A","Gotham B",sans-serif;
+}
+.promo-sidebar .excerpt-title a {
+  color: #FFF;
+  text-decoration: none;
+}
+
 .nyu-stories-story {
   display: block;
   text-align: left;
@@ -541,8 +559,7 @@ body {
   background-color: #ffb800;
   border: 1px solid #000;
   border-bottom: 0;
-  font: normal 16px/1.5 "Gotham SSm A", "Gotham SSm B", sans-serif;
-  font-weight: 700;
+  font: 700 16px/1.5 "Gotham SSm A", "Gotham SSm B", sans-serif;
   line-height: 80px;
   height: 80px;
   padding-left: 35px;

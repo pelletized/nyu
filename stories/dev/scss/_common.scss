@@ -56,8 +56,7 @@ width:545px;
 background-color:$section-title-background-home;
 border:1px solid #000;
 border-bottom:0;
-font:normal 16px/1.5 $font-stack-ssm;
-font-weight:$font-weight-medium;
+font:$font-weight-medium 16px/1.5 $font-stack-ssm;
 line-height:80px;
 height:80px;
 padding-left:35px;
@@ -72,6 +71,7 @@ background-color:$section-title-background;
 border:1px solid #000;
 background-color:#FFF;
 padding:30px; 
+
 	p {
 	font:normal 11px/1.5 $font-stack-ssm;
 	}
@@ -87,5 +87,4 @@ padding:30px;
 .cat-detail-content.caption-slideshow:after {
 display:block;
 margin-left:0;
-//margin-top:5px;
 }

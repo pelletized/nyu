@@ -19,8 +19,7 @@ border-bottom:1px solid $color-teal-dark;
 	p {
 	font-size:15px;
 	line-height:24px;	
-	}
-	
+	}	
 }
 
 .cat-header {
@@ -99,5 +98,26 @@ vertical-align:top;
 			color:$color-nyu-pink;
 			text-decoration:none;
 		}
+	}
+}
+
+.promo-sidebar {
+position:relative;
+width:355px;
+height:330px;
+margin:36px 15px;		
+background-position:cover;
+
+	.excerpt-title {
+	position:absolute;	
+	left:15px;
+	bottom:15px;	
+	font: 20px/28px "Gotham A","Gotham B",sans-serif;
+	
+		a {
+		color:#FFF;		
+		text-decoration:none;
+		}
+	
 	}
 }
