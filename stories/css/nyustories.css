@@ -447,8 +447,8 @@ a.story-link:hover .story-img:before {
 }
 .promo-sidebar .excerpt-title {
   position: absolute;
-  left: 15px;
-  bottom: 15px;
+  left: 20px;
+  bottom: 50px;
   font: 20px/28px "Gotham A","Gotham B",sans-serif;
 }
 .promo-sidebar .excerpt-title a {
