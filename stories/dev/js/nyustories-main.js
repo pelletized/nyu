@@ -1,8 +1,9 @@
 //only use these functions if the nav exists
 if($('.stories-main-nav-wrap').length) {
 
-	//sticky nav
-	(function() {	
+	//sticky nav 
+	//delayed to allow alerts to load, if needed
+	setTimeout(function() { 
 		var stickyNav = $('.stories-main-nav-wrap').offset().top;						
 		stickyNav = stickyNav - 75; //adjust for smoother transition
 		var positionTopAbs, positionTopFixed;
@@ -24,8 +25,8 @@ if($('.stories-main-nav-wrap').length) {
 				$('.stories-main-nav-wrap').css({position: 'absolute', top: positionTopAbs});
 			}
 		});
-
-	})();
+		
+	}, 1000);			
 
 	//if directly linked to a section, add active class to navbar
 	(function() {	
@@ -66,11 +67,12 @@ if($('.stories-main-nav-wrap').length) {
 	});
 
 	//scrolling adds/removes active class on navbar
-	(function() {
-	var articles = $('#articles').offset().top - 30;
-	var videos = $('#videos').offset().top - 50;
-	var slideshows = $('#slideshows').offset().top - 50;
-
+	(function() {	
+	var articles = $("a[name='articles']").offset().top - 30;
+	var videos = $("a[name='videos']").offset().top - 30;
+	var slideshows = $("a[name='slideshows']").offset().top - 30;
+	
+	
 		$(window).scroll(function(){		
 			var scroll = $(window).scrollTop();
 					
@@ -100,12 +102,13 @@ if($('.stories-main-nav-wrap').length) {
 }
 
 //truncate and add ellipses to promo boxes at the bottom of cat and story pages
-$(document).ready(function() {	
-	$('.singleBox .whitePromoBox p').dotdotdot({
+//delayed start for cq to catch up
+setTimeout(function() { 	
+	$('.link-content').dotdotdot({
 		height: 150,
 		after: 'span.pink'
 	});
-});
+}, 500);
 
 /*
  *	jQuery dotdotdot 1.6.16

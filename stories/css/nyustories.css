@@ -172,7 +172,7 @@ a.story-link:hover .story-img:before {
   display: inline-block;
   margin-left: 5px;
   margin-bottom: -3px;
-  background-image: url(../images/sprites.png);
+  background-image: url(../imgs/sprites.png);
   background-repeat: no-repeat;
   background-position: 0 -80px;
   width: 14px;
@@ -184,7 +184,7 @@ a.story-link:hover .story-img:before {
   display: inline-block;
   margin-left: 5px;
   margin-bottom: -4px;
-  background-image: url(../images/sprites.png);
+  background-image: url(../imgs/sprites.png);
   background-repeat: no-repeat;
   background-position: -60px -80px;
   width: 22px;
@@ -196,7 +196,7 @@ a.story-link:hover .story-img:before {
   display: inline-block;
   margin-left: 5px;
   margin-bottom: -3px;
-  background-image: url(../images/sprites.png);
+  background-image: url(../imgs/sprites.png);
   background-repeat: no-repeat;
   background-position: -30px -80px;
   width: 16px;
@@ -317,7 +317,7 @@ a.story-link:hover .story-img:before {
   display: inline-block;
 }
 .nyu-stories-footer-content .footer-connect li {
-  background: transparent url("../images/sprites.png") no-repeat 0 0;
+  background: transparent url("../imgs/sprites.png") no-repeat 0 0;
   text-indent: -9999px;
   outline: none;
 }
@@ -534,6 +534,7 @@ body {
 }
 
 .section-box {
+  min-width: 355px;
   margin: 0 15px;
 }
 .section-box p {
