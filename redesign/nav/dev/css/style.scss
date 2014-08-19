@@ -1,0 +1,20 @@
+/* style */
+@import "partials/variables.scss";
+
+//assumptions about base site, remove for prod?
+body {
+margin:0;
+padding:0;
+}
+
+header#ngn {
+display:block;
+}
+
+//base id to avoid conflicts. ngn = NYU Global Nav
+#ngn {
+@import "partials/reset.scss";
+@import "partials/grid.scss";
+@import "partials/main.scss";
+@import "partials/social.scss";
+} 

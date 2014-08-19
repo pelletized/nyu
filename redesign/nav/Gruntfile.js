@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 	
-	//require('time-grunt')(grunt);
+	require('time-grunt')(grunt);
 	
     // 1. All configuration goes here 
     grunt.initConfig({
@@ -10,22 +10,23 @@ module.exports = function(grunt) {
 			js: {
 				src: [
 					'dev/js/libs/*.js', // All JS in the libs folder
-					'dev/js/nyustories-main-dev.js'  // This specific file
+					'dev/js/main-dev.js',  // This specific file
+					'dev/js/insta-dev.js'  
 				],
-				dest: 'dev/js/nyustories-main.js',
+				dest: 'js/main.js',
 			},
 			css: {
 				src: [
-					'dev/scss/*.css'					
+					'dev/css/*.css',					
 				],
-				dest: 'css/nyustories.css',
+				dest: 'css/style.css',
 			}			
 		},
 		
 		uglify: {
 			build: {
-				src: 'dev/js/nyustories-main.js',
-				dest: 'js/nyustories-main.min.js'
+				src: 'js/main.js',
+				dest: 'js/main.min.js'
 			}
 		},
 		
@@ -40,36 +41,36 @@ module.exports = function(grunt) {
 			}
 		},
 		
+		jshint: {
+			files: [
+				'dev/js/main-dev.js',
+			]		
+		},
+		
 		sass: {
 			dist: {
 				options: {
-					//style: 'compressed',
-					style: 'expanded',
+					//style: 'compressed', //prod
+					style: 'expanded', //dev
 					spawn: false,
 					
 				},
-				files: {										
-					'dev/scss/nyustories.css': 'dev/scss/nyustories.scss'
+				files: {					
+					'dev/css/style.css': 'dev/css/style.scss'
 				}
 			} 
 		},
 		
-		jshint: {
-			files: [
-				'dev/js/nyustories-main-dev.js',
-			]		
-		},
-		
 		watch: {
 			scripts: {
-				files: ['dev/js/**/*.js'],  //all including subdirs
-				tasks: ['concat:js', 'uglify'],				
+				files: ['dev/js/**/*.js'],
+				tasks: ['concat:js', 'uglify'],
 				options: {
 					spawn: false,
 				},
 			},
 			css: {
-				files: ['dev/scss/*.scss'],
+				files: ['dev/css/**/*.scss'],
 				tasks: ['sass', 'concat:css'],
 				options: {
 					spawn: false,
@@ -84,11 +85,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', ['concat', 'uglify']);    
 
-	//5. run imagemin and jshint on their own
+	//5. run imagemin on it's own
 };

@@ -1,0 +1,34 @@
+// resets 
+*,
+:before,
+:after {
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body, header, img, ul, li {
+@extend .mp-none;
+}
+
+ul, li {
+list-style-type:none;
+}
+
+// common
+.mp-none {
+margin:0;
+padding:0;
+}
+
+a {
+color:$link-color;
+text-decoration:none;
+
+	&:hover {
+	color:$link-color-hover;
+	}
+}
+
+.uppercase {
+text-transform:uppercase;
+}

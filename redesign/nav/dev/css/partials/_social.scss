@@ -1,0 +1,31 @@
+ul.nav-social li a {
+display:block;
+background:transparent url(../images/social.png) no-repeat 0 0;
+width:20px;
+height:20px;
+text-indent:-9999px;
+outline:none;
+}
+
+ul.nav-social li {
+float:left;
+margin-right:10px;
+}
+
+.nav-social #btn-social-facebook a {background-position:0 0;}
+.nav-social #btn-social-facebook a:hover {background-position:0 -20px;}
+
+.nav-social #btn-social-youtube a {background-position:-29px 0;}
+.nav-social #btn-social-youtube a:hover {background-position:-29px -20px;}
+
+.nav-social #btn-social-linkedin a {background-position:-60px 0;}
+.nav-social #btn-social-linkedin a:hover {background-position:-60px -20px;}
+
+.nav-social #btn-social-instagram a {background-position:-90px 0;}
+.nav-social #btn-social-instagram a:hover {background-position:-90px -20px;}
+
+.nav-social #btn-social-foursquare a {width:22px;background-position:-119px 0;}
+.nav-social #btn-social-foursquare a:hover {width:22px;background-position:-119px -20px;}
+
+.nav-social #btn-social-twitter a {height:19px;background-position:-150px 0;}
+.nav-social #btn-social-twitter a:hover {background-position:-150px -20px;}
