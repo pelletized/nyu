@@ -146,6 +146,15 @@ header#ngn {
   width: 30px;
   height: 30px;
 }
+#ngn #ngnTextSearch {
+  width: 100%;
+  background-color: transparent;
+  font-style: italic;
+  color: #FFF;
+  line-height: 30px;
+  border: 0;
+  padding: 0 10px;
+}
 #ngn #tray-toggle {
   float: left;
   background-image: url(../images/tray-toggle.png);
@@ -165,7 +174,6 @@ header#ngn {
 #ngn .ngn-tray {
   position: absolute;
   top: 60px;
-  left: 0;
   width: 100%;
   background-color: #FFF;
   padding: 40px 0 20px 0;
@@ -307,4 +315,39 @@ header#ngn {
 }
 #ngn .nav-social #btn-social-twitter a:hover {
   background-position: -150px -20px;
+}
+@media screen and (max-width: 480px) {
+  #ngn .ngn-search-box, #ngn .btn-search {
+    display: none;
+  }
+  #ngn .ngn-tray {
+    width: 80%;
+    top: 0;
+    right: 0;
+  }
+  #ngn .col-100 {
+    background-color: #FFF;
+    width: 100%;
+    padding: 0 3%;
+  }
+  #ngn .col-90, #ngn .col-80, #ngn .col-75, #ngn .col-70, #ngn .col-66, #ngn .col-60, #ngn .col-50, #ngn .col-40, #ngn .col-33, #ngn .col-30, #ngn .col-25, #ngn .col-20 {
+    width: 100%;
+  }
+  #ngn .ngn-bar .col {
+    width: 50%;
+  }
+  #ngn #tray-toggle {
+    float: right;
+    border: 0;
+  }
+  #ngn .locations .col {
+    border: 0;
+  }
+  #ngn .locations li {
+    border: 0;
+  }
+  #ngn .locations-portals {
+    border: 0;
+    width: 100%;
+  }
 }

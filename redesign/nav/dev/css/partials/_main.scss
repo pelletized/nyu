@@ -27,6 +27,17 @@ width:30px;
 height:30px;
 }
 
+// search box
+#ngnTextSearch {
+width:100%;
+background-color:transparent;
+font-style:italic;
+color:#FFF;
+line-height:30px;
+border:0;
+padding:0 10px;
+}
+
 #tray-toggle {
 float:left;
 background-image:url(../images/tray-toggle.png);
@@ -50,7 +61,7 @@ background-position:-59px 0;
 .ngn-tray {
 position:absolute;
 top:60px;
-left:0;
+//left:0;
 width:100%;
 background-color:#FFF;
 padding:40px 0 20px 0;
