@@ -1,7 +1,7 @@
 /* style */
 @import "partials/variables.scss";
 
-//assumptions about base site, remove for prod?
+//assumptions about base site, remove for prod? do it in jquery?
 body {
 margin:0;
 padding:0;
@@ -9,10 +9,15 @@ padding:0;
 
 header#ngn {
 display:block;
+background-color:#FFF;
 }
 
 //base id to avoid conflicts. ngn = NYU Global Nav
 #ngn {
+width:100%;
+position:relative;
+top:0;
+left:0;
 @import "partials/reset.scss";
 @import "partials/grid.scss";
 @import "partials/main.scss";

@@ -5,10 +5,7 @@
 <meta charset="utf-8"> 
 <title>NYU redesign header</title>
 <link rel="stylesheet" href="css/style.css" />
-<!--<link rel="stylesheet" href="//cloud.typography.com/7436432/791902/css/fonts.css" />-->
-<!--FPO fonts-->
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
+<link rel="stylesheet" href="//cloud.typography.com/7436432/664202/css/fonts.css" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/main.js"></script>
 
@@ -19,21 +16,23 @@
 <header id="ngn" role="banner">
 	<nav class="ngn-bar">
 		<div class="row">
-			<div class="col col-70">
+			<div class="col col-60">
 				<a href="/"><img src="images/logo-nyu.png" alt="NYU" /></a>
-			</div><!--/.col-66-->
-			<div class="col col-30 col-right">
-				<a href="#" class="btn-search"><img src="images/btn-search.png" alt="search" /></a>
-				<div id="tray-toggle" class="btn-more"></div>
-			
-			</div><!--/.col-33-->		
+			</div><!--/.col-70-->
+			<div class="col col-40 col-right">
+				<div class="ngn-search-box"></div>
+				<div class="nav-action clearfix">					
+					<a href="#" class="btn-search"><img src="images/btn-search.png" alt="search" /></a>
+					<div id="tray-toggle" class="btn-more"></div>
+				</div>				
+			</div><!--/.col-30-->		
 		</div><!--/.row-->	
 	</nav><!--/.ngn-bar-->	
 	
 	<div class="ngn-tray">
 		<div class="row">	
-			<div class="col col-66">
-				<div class="row">
+			<div class="col col-60">
+				<div class="row locations">
 					<div class="col col-33">
 						<ul class="locations-portals">
 							<li><a href="#">New York</a></li>
@@ -42,7 +41,7 @@
 						</ul>
 					</div>
 					<div class="col col-33">					
-						<ul>
+						<ul class="locations-studyaway">
 							<li><a href="#">Accra</a></li>
 							<li><a href="#">Berlin</a></li>
 							<li><a href="#">Buenos Aires</a></li>		
@@ -52,7 +51,7 @@
 						</ul>
 					</div>
 					<div class="col col-33">
-						<ul>
+						<ul class="locations-studyaway">
 							<li><a href="#">Paris</a></li>
 							<li><a href="#">Prague</a></li>
 							<li><a href="#">Sydney</a></li>
@@ -61,9 +60,11 @@
 							<li><a href="#">Bushwick</a></li>
 						</ul>
 					</div>			
-				</div><!--/.row-->
-				<div class="row">
-					<span class="nav-tray-header uppercase">Schools</span>
+				</div><!--/.row .locations-->
+				<div class="row nyu-schools">
+					
+					<span class="tray-header uppercase">Schools</span>						
+					
 					<div class="col col-50">
 						<ul>
 							<li><a href="#">Arts &amp; Science</a></li>
@@ -93,13 +94,13 @@
 						</ul><!--/.schools-->
 					</div>
 				</div><!--/.row-->
-			</div><!--/.col-66-->
+			</div><!--/.col-60-->
 			
-			<div class="col col-33">				
+			<div class="col col-40 gutter-left">				
 				<p><a href="#" class="btn-login" role="button">NYUHOME Login</a></p>
 				
 				<span class="tray-header uppercase">Important Links</span>
-				<div class="row">
+				<div class="row imp-links">
 					<div class="col col-50">
 						<ul class="bulleted">
 							<li><a href="#">Academic Calendars</a></li>
@@ -127,21 +128,26 @@
 							<li><a href="#">Giving to NYU</a></li>					
 						</ul>
 					</div>
-				</div>
+				</div><!--/.row .imp-links-->
 				
-				<ul class="nav-social">
-					<li id="btn-social-facebook"><a onclick="_gaq.push(['_trackSocial', 'Facebook', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'Facebook',0,true]);" title="NYU on Facebook" target="_blank" href="http://www.facebook.com/nyu">Facebook</a></li>
-					<li id="btn-social-youtube"><a onclick="_gaq.push(['_trackSocial', 'YouTube', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'YouTube',0,true]);" title="NYU on YouTube" target="_blank" href="http://www.youtube.com/nyu">YouTube</a></li>
-					<li id="btn-social-linkedin"><a onclick="_gaq.push(['_trackSocial', 'LinkedIn', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'LinkedIn',0,true]);" title="NYU on LinkedIn" target="_blank" href="http://www.linkedin.com/company/3159?trk=tyah">LinkedIn</a></li>
-					<li id="btn-social-instagram"><a onclick="_gaq.push(['_trackSocial', 'Instagram', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'Instagram',0,true]);" title="NYU on Instagram" target="_blank" href="http://instagram.com/nyuniversity">Instagram</a></li>
-					<li id="btn-social-foursquare"><a onclick="_gaq.push(['_trackSocial', 'foursquare', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'foursquare',0,true]);" title="NYU on Foursquare" target="_blank" href="https://foursquare.com/nyuniversity">Foursquare</a></li>
-					<li id="btn-social-twitter"><a onclick="_gaq.push(['_trackSocial', 'Twitter', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'Twitter',0,true]);" title="NYU on Twitter" target="_blank" href="http://www.twitter.com/nyuniversity">Twitter</a></li>
-				</ul>
+				<div class="row">
+					<div class="col col-100">
+						<ul class="nav-social">
+							<li id="btn-social-facebook"><a onclick="_gaq.push(['_trackSocial', 'Facebook', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'Facebook',0,true]);" title="NYU on Facebook" target="_blank" href="http://www.facebook.com/nyu">Facebook</a></li>
+							<li id="btn-social-youtube"><a onclick="_gaq.push(['_trackSocial', 'YouTube', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'YouTube',0,true]);" title="NYU on YouTube" target="_blank" href="http://www.youtube.com/nyu">YouTube</a></li>
+							<li id="btn-social-linkedin"><a onclick="_gaq.push(['_trackSocial', 'LinkedIn', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'LinkedIn',0,true]);" title="NYU on LinkedIn" target="_blank" href="http://www.linkedin.com/company/3159?trk=tyah">LinkedIn</a></li>
+							<li id="btn-social-instagram"><a onclick="_gaq.push(['_trackSocial', 'Instagram', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'Instagram',0,true]);" title="NYU on Instagram" target="_blank" href="http://instagram.com/nyuniversity">Instagram</a></li>
+							<li id="btn-social-foursquare"><a onclick="_gaq.push(['_trackSocial', 'foursquare', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'foursquare',0,true]);" title="NYU on Foursquare" target="_blank" href="https://foursquare.com/nyuniversity">Foursquare</a></li>
+							<li id="btn-social-twitter"><a onclick="_gaq.push(['_trackSocial', 'Twitter', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'Twitter',0,true]);" title="NYU on Twitter" target="_blank" href="http://www.twitter.com/nyuniversity">Twitter</a></li>
+						</ul>
+					</div>
+				</div><!--/.row-->
+				
 			</div><!--/.col-33-->
 		</div><!--/.row-->
 	</div><!--/.ngn-tray-->
 	
-</header><!--/.wrap-nav-global-->
+</header><!--/#ngn-->
 
 
 <div id="content-main" style="width:960px;height:1000px;margin:0 auto;clear:both;">

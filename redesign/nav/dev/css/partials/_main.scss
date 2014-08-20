@@ -1,9 +1,166 @@
+// top purple bar
 .ngn-bar {
+position:relative;
 background-color:$bar-background-color;
 height:60px;
 padding:15px 0;
 }
 
+.nav-action {
+float:right;
+right:0;
+width:100px;
+}
+
+.ngn-search-box {
+float:left;
+width:0;
+height:30px;
+margin-left:68%;
+background-color:darken($bar-background-color, 8%);
+}
+
+.btn-search {
+float:left;
+padding:10px 15px 0 0;
+width:30px;
+height:30px;
+}
+
+#tray-toggle {
+float:left;
+background-image:url(../images/tray-toggle.png);
+background-repeat:no-repeat;
+width:50px;
+height:30px;
+line-height:30px;
+cursor:pointer;
+border-left:1px solid #FFF;
+}
+
+.btn-more {
+background-position:10px 0;
+}
+
+.btn-less {
+background-position:-59px 0;
+}
+
+// main tray
+.ngn-tray {
+position:absolute;
+top:60px;
+left:0;
+width:100%;
+background-color:#FFF;
+padding:40px 0 20px 0;
+border-bottom: 1px solid #dadde0;
+box-shadow: 0 1px 1px 0 #dadde0;    
+z-index: 100;
+}
+
+// left col 
+.tray-header {
+display:block;
+width:100%;
+font-weight:bold;
+color:$grey-darkest;
+}
+
+.locations {
+margin-bottom:30px;
+	
+	.col {
+	padding:0;
+	}
+	
+	.col {
+	border-right:1px solid $grey-dark;
+		
+		&:last-child {
+		border:0;		
+		}
+	
+	}
+
+	li {
+	border-bottom:1px solid $grey-dark;
+		
+		&:last-child {
+		border:0;
+		}
+	}
+	
+	a {
+	display:block;
+	}
+}
+
+.locations-portals {
+font-size:2rem;
+line-height:3.4rem;
+}
+
+.locations-studyaway {
+line-height:1.67rem;
+	
+	li {	
+	padding:0 15px;	
+	}	
+}
+
+.nyu-schools {
+
+	.col {		
+	padding-left:0;		
+	}
+
+	li {	
+	font-size:0.7rem;
+	line-height:1.67rem;
+	border-bottom:1px solid $grey-dark;
+		
+		&:last-child {
+		border:0;
+		}
+	}
+
+	a {
+	display:block;
+	}
+
+}
+
+.imp-links {
+	li {
+	font-size:0.7rem;
+	line-height:1.67rem;
+	border-bottom:1px solid $grey-dark;	
+		
+		&:last-child {
+		border:0;
+		}
+	}
+
+	a {
+	display:block;
+	}
+}
+
+.bulleted li {
+padding-left:15px;
+text-indent:-13px;
+
+	&:before {
+	float:left;
+	content: "<";
+	color:$grey-dark;
+	margin-right:15px;
+	}
+
+}
+
+// right column
 .btn-login {
   border: 10px solid $grey-dark;
   display: block;

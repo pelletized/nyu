@@ -7,7 +7,6 @@ clear:both;
 //grid
 .row {
 @extend .clearfix;
-//max-width:960px;
 max-width:1170px;
 margin:0 auto;
 }
@@ -108,4 +107,8 @@ width:75%;
 
 .col-25 {
 width:25%;
+}
+
+.gutter-left {
+padding-left:5%;
 }

@@ -20,6 +20,10 @@ margin:0;
 padding:0;
 }
 
+div, section {
+font:normal 0.8rem/1rem $font-stack-ssm;
+}
+
 a {
 color:$link-color;
 text-decoration:none;

@@ -6,8 +6,15 @@ body {
 
 header#ngn {
   display: block;
+  background-color: #FFF;
 }
 
+#ngn {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
 #ngn *,
 #ngn :before,
 #ngn :after {
@@ -20,6 +27,9 @@ header#ngn {
 #ngn .mp-none, #ngn body, #ngn header, #ngn img, #ngn ul, #ngn li {
   margin: 0;
   padding: 0;
+}
+#ngn div, #ngn section {
+  font: normal 0.8rem/1rem "Gotham SSm A", "Gotham SSm B", sans-serif;
 }
 #ngn a {
   color: #57068c;
@@ -109,10 +119,131 @@ header#ngn {
 #ngn .col-25 {
   width: 25%;
 }
+#ngn .gutter-left {
+  padding-left: 5%;
+}
 #ngn .ngn-bar {
+  position: relative;
   background-color: #57068c;
   height: 60px;
   padding: 15px 0;
+}
+#ngn .nav-action {
+  float: right;
+  right: 0;
+  width: 100px;
+}
+#ngn .ngn-search-box {
+  float: left;
+  width: 0;
+  height: 30px;
+  margin-left: 68%;
+  background-color: #3f0465;
+}
+#ngn .btn-search {
+  float: left;
+  padding: 10px 15px 0 0;
+  width: 30px;
+  height: 30px;
+}
+#ngn #tray-toggle {
+  float: left;
+  background-image: url(../images/tray-toggle.png);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  border-left: 1px solid #FFF;
+}
+#ngn .btn-more {
+  background-position: 10px 0;
+}
+#ngn .btn-less {
+  background-position: -59px 0;
+}
+#ngn .ngn-tray {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #FFF;
+  padding: 40px 0 20px 0;
+  border-bottom: 1px solid #dadde0;
+  box-shadow: 0 1px 1px 0 #dadde0;
+  z-index: 100;
+}
+#ngn .tray-header {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  color: #3e4e5e;
+}
+#ngn .locations {
+  margin-bottom: 30px;
+}
+#ngn .locations .col {
+  padding: 0;
+}
+#ngn .locations .col {
+  border-right: 1px solid #eff1f0;
+}
+#ngn .locations .col:last-child {
+  border: 0;
+}
+#ngn .locations li {
+  border-bottom: 1px solid #eff1f0;
+}
+#ngn .locations li:last-child {
+  border: 0;
+}
+#ngn .locations a {
+  display: block;
+}
+#ngn .locations-portals {
+  font-size: 2rem;
+  line-height: 3.4rem;
+}
+#ngn .locations-studyaway {
+  line-height: 1.67rem;
+}
+#ngn .locations-studyaway li {
+  padding: 0 15px;
+}
+#ngn .nyu-schools .col {
+  padding-left: 0;
+}
+#ngn .nyu-schools li {
+  font-size: 0.7rem;
+  line-height: 1.67rem;
+  border-bottom: 1px solid #eff1f0;
+}
+#ngn .nyu-schools li:last-child {
+  border: 0;
+}
+#ngn .nyu-schools a {
+  display: block;
+}
+#ngn .imp-links li {
+  font-size: 0.7rem;
+  line-height: 1.67rem;
+  border-bottom: 1px solid #eff1f0;
+}
+#ngn .imp-links li:last-child {
+  border: 0;
+}
+#ngn .imp-links a {
+  display: block;
+}
+#ngn .bulleted li {
+  padding-left: 15px;
+  text-indent: -13px;
+}
+#ngn .bulleted li:before {
+  float: left;
+  content: "<";
+  color: #eff1f0;
+  margin-right: 15px;
 }
 #ngn .btn-login {
   border: 10px solid #eff1f0;
@@ -122,6 +253,9 @@ header#ngn {
   margin-bottom: 50px;
   padding: 20px 0;
   text-align: center;
+}
+#ngn ul.nav-social {
+  margin-top: 60px;
 }
 #ngn ul.nav-social li a {
   display: block;

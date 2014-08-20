@@ -3,6 +3,7 @@ $nyu-purple:#57068c;
 $nyu-pink:#d11255;
 $grey-light:#3e4e5e;
 $grey-dark:#eff1f0;
+$grey-darkest:#3e4e5e;
 
 $link-color: $nyu-purple;
 $link-color-hover: $nyu-pink;
@@ -10,3 +11,5 @@ $link-color-hover: $nyu-pink;
 $bar-background-color: $nyu-purple;
 
 //common
+$font-stack:'Gotham A','Gotham B',sans-serif;
+$font-stack-ssm:'Gotham SSm A','Gotham SSm B',sans-serif; //screen smart fonts for sizes 16px and below
